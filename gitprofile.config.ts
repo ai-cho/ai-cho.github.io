@@ -38,7 +38,7 @@ const CONFIG = {
             'Unconstrained Large-scale Three-dimensional Reconstruction and Rendering across Altitudes',
           imageUrl:
             'https://github.com/user-attachments/assets/badb9f7b-0a45-4dbd-8491-351adfedd225',
-          link: 'https://sites.google.com/view/ultrra-wacv-2025',
+          link: 'https://drive.google.com/file/d/1ohp617ilR6g7wMcxfxiNRuogoLZMxkoH/view?usp=drive_link',
         },
         {
           title: 'DeltaKD',
