@@ -45,7 +45,7 @@ const CONFIG = {
           description:
             'Selective Layer Distillation for Vision Transformers',
           imageUrl:
-            'https://github.com/ai-cho/DeltaKD/blob/main/image.png?raw=true',
+            'https://raw.githubusercontent.com/ai-cho/DeltaKD/refs/heads/main/image.png',
           link: 'https://github.com/ai-cho/DeltaKD',
         },
         {
@@ -53,7 +53,7 @@ const CONFIG = {
           description:
             'Proposal new architecture with PointNet and PointNet++',
           imageUrl:
-            'https://private-user-images.githubusercontent.com/120773889/399151570-29822d3c-b211-4f07-9751-1552e2d6ffbc.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTk4OTQ1MzksIm5iZiI6MTc1OTg5NDIzOSwicGF0aCI6Ii8xMjA3NzM4ODkvMzk5MTUxNTcwLTI5ODIyZDNjLWIyMTEtNGYwNy05NzUxLTE1NTJlMmQ2ZmZiYy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTAwOFQwMzMwMzlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04NzQwOGEzNzc4NTRkNTczY2E1ZGVlNjY3ODQ4NDRlNWFhNTM5NDJmNzc4NTIzZjFmMzZkYjVkZWFiYzRmOTIxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.iloN8ZwWBc4CjIcifXIfJdJAFeMHDTbhVsj2Qc4oYwE',
+            'https://github.com/user-attachments/assets/76dca11c-7d1a-45d8-b1be-6cbd215fc062',
           link: 'https://github.com/ai-cho/DL-TermProject',
         },
         {
@@ -61,7 +61,7 @@ const CONFIG = {
           description:
             'Detecting face/voice manipulation and analyzing its maliciousness',
           imageUrl:
-            'https://private-user-images.githubusercontent.com/120773889/387196362-34814f19-d0aa-4567-91a9-9de42b042c93.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTk4OTQ2MDksIm5iZiI6MTc1OTg5NDMwOSwicGF0aCI6Ii8xMjA3NzM4ODkvMzg3MTk2MzYyLTM0ODE0ZjE5LWQwYWEtNDU2Ny05MWE5LTlkZTQyYjA0MmM5My5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTAwOFQwMzMxNDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zYmQzZDExNzAzY2JmM2I4NzMyZjc5MzBjNDYyZmRmYjAyZWVlNWZkNjk5Yzc0ZDVlMTgyY2M4ZTQ1Yjc4OGIzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.v_xBE2eCzfZJr__7Dmq4jNA_tMC3x9b1EqcLeiRv-Po',
+            'https://github.com/user-attachments/assets/479f8002-b272-4a7c-a946-0fec4f38c8f3',
           link: 'https://github.com/ai-cho/deepfake-detection',
         },
         {
