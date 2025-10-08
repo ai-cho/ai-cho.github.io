@@ -103,7 +103,7 @@ const ExternalProjectCard = ({
                         <LazyImage
                           src={item.imageUrl}
                           alt={'thumbnail'}
-                          className="object-contain w-full h-full scale-80" // 이미지 크기 90%로 축소
+                          className="object-contain w-full h-full scale-80" // 이미지 크기 80%로 축소.
                           placeholder={skeleton({
                             widthCls: 'w-full',
                             heightCls: 'h-full',

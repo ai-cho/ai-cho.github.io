@@ -75,6 +75,8 @@ export interface SanitizedExperience {
   from: string;
   to: string;
   companyLink?: string;
+  advisor?: string;      // 추가
+  location?: string;     // 추가
 }
 
 export interface SanitizedCertification {
