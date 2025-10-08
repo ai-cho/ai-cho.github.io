@@ -111,7 +111,7 @@ const CONFIG = {
       link: 'https://sites.google.com/view/ultrra-wacv-2025',
     },
     {
-      name: '1th BrAIn Research Program 1st Prize',
+      name: '2026 BrAIn Research Program 1st Prize',
       body: 'Seoul, Korea',
       year: '2025',
       link: 'https://github.com/ai-cho/DeltaKD',
