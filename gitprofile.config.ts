@@ -16,37 +16,61 @@ const CONFIG = {
       header: 'Github Projects',
       mode: 'automatic', // Mode can be: 'automatic' or 'manual'
       automatic: {
-        sortBy: 'stars', // Sort projects by 'stars' or 'updated'
+        sortBy: 'updated', // Sort projects by 'stars' or 'updated'
         limit: 8, // How many projects to display.
         exclude: {
           forks: false, // Forked projects will not be displayed if set to true.
           projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
         },
       },
-      manual: {
-        // Properties for manually specifying projects
-        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
-      },
+      // manual: {
+      //   // Properties for manually specifying projects
+      //   projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+      // },
     },
     external: {
       header: 'My Projects',
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Project Name',
+          title: 'WACV 2025 ULTRRA WORKSHOP',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'Unconstrained Large-scale Three-dimensional Reconstruction and Rendering across Altitudes',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'https://lh3.googleusercontent.com/sitesv/AICyYdao2L2hFZrguXepTyFBKdUQv7b8IEk2Ihestqqf0hxTNbK1uQGdTEHS40em7vB0_omaFuN53i4O2wiHwhPdFceGM6xHfWbddjSFKJ07V-yVviwnRoCoJ4HL02Qf_Kxv0h3jjUpZyVL_Eof7Mf9h7wARnRMkCwTvfyMsKm-1SifSnIOCNci6hiHeaiYS90jsHTDgOH8rV3xpogBrUoMaY2zTpT3yHEtOQs8zWlU=w1280',
+          link: 'https://sites.google.com/view/ultrra-wacv-2025',
         },
         {
-          title: 'Project Name',
+          title: 'DeltaKD',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'Selective Layer Distillation for Vision Transformers',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'https://github.com/ai-cho/DeltaKD/blob/main/image.png?raw=true',
+          link: 'https://github.com/ai-cho/DeltaKD',
+        },
+        {
+          title: 'Attentin in 3D',
+          description:
+            'Proposal new architecture with PointNet and PointNet++',
+          imageUrl:
+            'https://private-user-images.githubusercontent.com/120773889/399151570-29822d3c-b211-4f07-9751-1552e2d6ffbc.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTk4OTQ1MzksIm5iZiI6MTc1OTg5NDIzOSwicGF0aCI6Ii8xMjA3NzM4ODkvMzk5MTUxNTcwLTI5ODIyZDNjLWIyMTEtNGYwNy05NzUxLTE1NTJlMmQ2ZmZiYy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTAwOFQwMzMwMzlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04NzQwOGEzNzc4NTRkNTczY2E1ZGVlNjY3ODQ4NDRlNWFhNTM5NDJmNzc4NTIzZjFmMzZkYjVkZWFiYzRmOTIxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.iloN8ZwWBc4CjIcifXIfJdJAFeMHDTbhVsj2Qc4oYwE',
+          link: 'https://github.com/ai-cho/DL-TermProject',
+        },
+        {
+          title: 'Deepfake Detection',
+          description:
+            'Detecting face/voice manipulation and analyzing its maliciousness',
+          imageUrl:
+            'https://private-user-images.githubusercontent.com/120773889/387196362-34814f19-d0aa-4567-91a9-9de42b042c93.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTk4OTQ2MDksIm5iZiI6MTc1OTg5NDMwOSwicGF0aCI6Ii8xMjA3NzM4ODkvMzg3MTk2MzYyLTM0ODE0ZjE5LWQwYWEtNDU2Ny05MWE5LTlkZTQyYjA0MmM5My5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTAwOFQwMzMxNDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zYmQzZDExNzAzY2JmM2I4NzMyZjc5MzBjNDYyZmRmYjAyZWVlNWZkNjk5Yzc0ZDVlMTgyY2M4ZTQ1Yjc4OGIzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.v_xBE2eCzfZJr__7Dmq4jNA_tMC3x9b1EqcLeiRv-Po',
+          link: 'https://github.com/ai-cho/deepfake-detection',
+        },
+        {
+          title: 'Recommendation using company reviews',
+          description:
+            'Data analysis in terms of data science and created the program that the actual company(Wanted Insight, Job Planet) wanted',
+          // imageUrl:
+          //   'https://github.com/ai-cho/DeltaKD/blob/main/image.png?raw=true',
+          link: 'https://github.com/ai-cho/SCAICO_turnover_rate',
         },
       ],
     },
@@ -64,68 +88,71 @@ const CONFIG = {
 
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
+      company: 'Computational Intelligence & Photography Lab, Yonsei University',
+      position: 'Research Intern',
+      from: 'January 2025',
       to: 'Present',
-      companyLink: 'https://example.com',
+      companyLink: 'https://www.ciplab.kr/',
+      advisor: 'Prof. Seon Joo Kim', // 지도교수
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'Multimodal AI Lab, Yonsei University',
+      position: 'Research Intern',
+      from: 'June 2024',
+      to: 'August 2024',
+      advisor: 'Prof. Youngjae Yu', // 지도교수
     },
   ],
   certifications: [
     {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
+      name: 'WACV 2025 WORKSHOP (3RD & BEST OUTSIDE SUBMISSION)',
+      body: 'Nashvile, USA',
+      year: '2025',
+      link: 'https://sites.google.com/view/ultrra-wacv-2025',
     },
+    {
+      name: '1th BrAIn Research Program 1st Prize',
+      body: 'Seoul, Korea',
+      year: '2025',
+      link: 'https://github.com/ai-cho/DeltaKD',
+    },
+    {
+      name: 'Seoul Central Artificial Intelligence Competition Golden Prize',
+      body: 'Seoul, Korea',
+      year: '2023',
+      link: 'https://github.com/ai-cho/SCAICO_turnover_rate',
+    },
+    {
+      name: 'Scholarship for academic excellence',
+      body: 'Suwon, Korea',
+      year: '2022',
+    },    
   ],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
-    },
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'Sungkyunkwan University',
+      degree: 'Bachelor of Applied Artificial Intelligence',
+      from: '2022',
+      to: '2026',
     },
   ],
   publications: [
     {
-      title: 'Publication Title',
+      title: 'Updating station express status based on review data by GCN',
       conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-    {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
-      journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      journalName: 'JKIICE',
+      authors: 'Myeongseop Kim, <b>Jeonghwan Cho</b>, Semin Cheon, Junseo Choi, Hayoung Oh',
+      link: 'https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003131873',
+      // description:
+      //   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     },
   ],
   // Display articles from your medium or dev account. (Optional)
-  blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
-    limit: 2, // How many articles to display. Max is 10.
-  },
+  // blog: {
+  //   source: 'dev', // medium | dev
+  //   username: 'arifszn', // to hide blog section, keep it empty
+  //   limit: 2, // How many articles to display. Max is 10.
+  // },
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
   },

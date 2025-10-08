@@ -100,9 +100,10 @@ const PublicationCard = ({
                     </p>
                   )}
                   {item.authors && (
-                    <p className="text-base-content opacity-50 text-sm">
-                      Author: {item.authors}
-                    </p>
+                    <p
+                      className="text-base-content opacity-50 text-sm"
+                      dangerouslySetInnerHTML={{ __html: `Author: ${item.authors}` }}
+                    />
                   )}
                   {item.description && (
                     <p className="mt-2 text-base-content text-sm text-justify">

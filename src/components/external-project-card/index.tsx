@@ -99,10 +99,11 @@ const ExternalProjectCard = ({
                   </h2>
                   {item.imageUrl && (
                     <div className="avatar opacity-90">
-                      <div className="w-24 h-24 mask mask-squircle">
+                      <div className="w-80 h-24 mask mask-rectangle mx-auto">
                         <LazyImage
                           src={item.imageUrl}
                           alt={'thumbnail'}
+                          className="object-contain w-full h-full scale-80" // 이미지 크기 90%로 축소
                           placeholder={skeleton({
                             widthCls: 'w-full',
                             heightCls: 'h-full',

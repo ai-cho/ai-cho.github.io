@@ -7,11 +7,15 @@ const ListItem = ({
   position,
   company,
   companyLink,
+  advisor,      // 추가
+  location,     // 추가
 }: {
   time: React.ReactNode;
   position?: React.ReactNode;
   company?: React.ReactNode;
   companyLink?: string;
+  advisor?: React.ReactNode;   // 추가
+  location?: React.ReactNode;  // 추가
 }) => (
   <li className="mb-5 ml-4">
     <div
@@ -24,6 +28,18 @@ const ListItem = ({
       <a href={companyLink} target="_blank" rel="noreferrer">
         {company}
       </a>
+      {/* 지도교수 정보가 있으면 표시 */}
+      {advisor && (
+        <div className="opacity-80">
+          <strong>Advisor:</strong> {advisor}
+        </div>
+      )}
+      {/* 장소 정보가 있으면 표시 */}
+      {location && (
+        <div className="opacity-80">
+          <strong>Location:</strong> {location}
+        </div>
+      )}
     </div>
   </li>
 );
@@ -86,6 +102,9 @@ const ExperienceCard = ({
                         ? experience.companyLink
                         : undefined
                     }
+                    advisor={experience.advisor}     // 추가
+                    location={experience.location}   // 추가
+  
                   />
                 ))}
               </Fragment>
