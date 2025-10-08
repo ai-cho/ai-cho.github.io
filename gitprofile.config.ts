@@ -37,7 +37,7 @@ const CONFIG = {
           description:
             'Unconstrained Large-scale Three-dimensional Reconstruction and Rendering across Altitudes',
           imageUrl:
-            'https://lh3.googleusercontent.com/sitesv/AICyYdao2L2hFZrguXepTyFBKdUQv7b8IEk2Ihestqqf0hxTNbK1uQGdTEHS40em7vB0_omaFuN53i4O2wiHwhPdFceGM6xHfWbddjSFKJ07V-yVviwnRoCoJ4HL02Qf_Kxv0h3jjUpZyVL_Eof7Mf9h7wARnRMkCwTvfyMsKm-1SifSnIOCNci6hiHeaiYS90jsHTDgOH8rV3xpogBrUoMaY2zTpT3yHEtOQs8zWlU=w1280',
+            'https://github.com/user-attachments/assets/badb9f7b-0a45-4dbd-8491-351adfedd225',
           link: 'https://sites.google.com/view/ultrra-wacv-2025',
         },
         {

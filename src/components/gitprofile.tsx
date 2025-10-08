@@ -57,15 +57,25 @@ const GitProfile = ({ config }: { config: Config }) => {
             .map((project) => `+-repo:${project}`)
             .join('');
 
+        // Fetch more repositories to account for filtering (5x limit to ensure we get enough valid repos)
+        const fetchLimit = Math.min(sanitizedConfig.projects.github.automatic.limit * 5, 100);
         const query = `user:${sanitizedConfig.github.username}+fork:${!sanitizedConfig.projects.github.automatic.exclude.forks}${excludeRepo}`;
-        const url = `https://api.github.com/search/repositories?q=${query}&sort=${sanitizedConfig.projects.github.automatic.sortBy}&per_page=${sanitizedConfig.projects.github.automatic.limit}&type=Repositories`;
+        const url = `https://api.github.com/search/repositories?q=${query}&sort=${sanitizedConfig.projects.github.automatic.sortBy}&per_page=${fetchLimit}&type=Repositories`;
 
         const repoResponse = await axios.get(url, {
           headers: { 'Content-Type': 'application/vnd.github.v3+json' },
         });
         const repoData = repoResponse.data;
 
-        return repoData.items;
+        // Filter out repositories with no detected language (null, undefined, empty string, or 'None')
+        const filteredRepos = repoData.items.filter((repo: GithubProject) => 
+          repo.language && 
+          repo.language !== null && 
+          repo.language !== undefined && 
+          repo.language.trim() !== '' && 
+          repo.language.toLowerCase() !== 'none'
+        );
+        return filteredRepos.slice(0, sanitizedConfig.projects.github.automatic.limit);
       } else {
         if (sanitizedConfig.projects.github.manual.projects.length === 0) {
           return [];
@@ -81,7 +91,14 @@ const GitProfile = ({ config }: { config: Config }) => {
         });
         const repoData = repoResponse.data;
 
-        return repoData.items;
+        // Filter out repositories with no detected language (null, undefined, empty string, or 'None')
+        return repoData.items.filter((repo: GithubProject) => 
+          repo.language && 
+          repo.language !== null && 
+          repo.language !== undefined && 
+          repo.language.trim() !== '' && 
+          repo.language.toLowerCase() !== 'none'
+        );
       }
     },
     [
